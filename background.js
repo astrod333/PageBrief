@@ -1,0 +1,1 @@
+// Background script for Chrome extension (required by manifest, can be empty for now)
