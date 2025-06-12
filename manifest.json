@@ -1,29 +1,24 @@
 {
   "manifest_version": 3,
-  "name": "PageBrief",
+  "name": "Web Page Summarizer",
   "version": "1.0",
-  "description": "Summarizes the contents of the current web page into a concise summary.",
-  "permissions": ["scripting", "activeTab"],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icon16.png",
-      "32": "icon32.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
-    }
-  },
+  "description": "Summarizes web pages using AI.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["injectScript.js"]
+    }
+  ],
   "icons": {
     "16": "icon16.png",
-    "32": "icon32.png",
     "48": "icon48.png",
     "128": "icon128.png"
-  },
-  "host_permissions": [
-    "<all_urls>",
-    "https://openrouter.ai/*"
-  ]
+  }
 }
