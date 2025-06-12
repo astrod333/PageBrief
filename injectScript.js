@@ -49,7 +49,7 @@ function createSummarizerButton() {
         fetch("https://openrouter.ai/api/v1/chat/completions", {
             method: "POST",
             headers: {
-                "Authorization": "Bearer <REPLACE WITH YOUR API KEY>",
+                "Authorization": "Bearer <YOUR_OPENROUTER_API_KEY>",
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({

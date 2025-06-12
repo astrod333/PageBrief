@@ -6,7 +6,6 @@ PageBrief is a Google Chrome extension that provides concise summaries of web pa
 
 - Summarizes the main content of any web page with a single click
 - Clean and user-friendly interface
-- Supports multiple languages (if applicable)
 - Lightweight and fast
 - Privacy-focused: processes data locally (if applicable)
 
@@ -39,14 +38,13 @@ To contribute or modify the extension:
 2. Make your changes in the source files.
 3. Reload the extension in Chrome (`chrome://extensions/`) after making changes.
 
-### Folder Structure
+### Project Structure
 
 - `manifest.json` - Chrome extension manifest
-- `background.js` - Background script (if used)
-- `content.js` - Content script for page interaction
-- `popup.html` / `popup.js` - Popup UI and logic
-- `styles/` - CSS files
+- `background.js` - Background script
+- `injectScript.js` - Script injected into web pages
+- `icon16.png`, `icon48.png`, `icon128.png` - Extension icons
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the terms of the MIT License. See the [LICENSE](LICENSE) file for details.
